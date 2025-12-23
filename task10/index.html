@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Kingdom — portfolio and blog</title>
+  <meta name="description" content="Responsive PSD-based layout built with Flexbox: portfolio, blog, testimonials and contact section.">
+  <meta name="keywords" content="flexbox, responsive layout, html, css, psd, portfolio, blog, seo">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Если карта не обязательна (по условию задания чаще всего нет) — лучше удалить Google Maps, чтобы улучшить PageSpeed -->
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap"></script>
+  <link rel="amphtml" href="amp.html">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a class="logo" href="#top" aria-label="Home">
+        <span class="logo-text"><strong>my</strong>.kingdom</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" type="button" aria-label="Menu (no functionality)">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero section">
+      <div class="container hero-inner">
+        <h1 class="hero-title">We make websites and apps that you'll love to have.</h1>
+        <a class="btn btn-primary" href="#work">See what I have done so far</a>
+      </div>
+    </section>
+
+    <!-- WELCOME / FEATURES -->
+    <section class="welcome" id="welcome">
+      <div class="container welcome-grid">
+        <div class="welcome-intro">
+          <h2 class="section-title">Welcome</h2>
+          <p class="section-lead">We implement awesome ideas into full-scale projects.</p>
+          <p class="text-muted"><strong>Learn more about us.</strong></p>
+        </div>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7 12h10M7 8h10M7 16h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Collaborate</h3>
+          <p class="feature-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3l3 6 6 .9-4.5 4.4 1.1 6.2L12 17.8 6.4 20.5l1.1-6.2L3 9.9 9 9z"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Creative</h3>
+          <p class="feature-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M9 18l-4-4 4-4M15 6l4 4-4 4M14 4l-4 16"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Development</h3>
+          <p class="feature-text">Voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work" aria-label="Featured work">
+      <div class="container">
+        <header class="section-head section-head--light">
+          <h2 class="section-title section-title--light">Featured Work</h2>
+          <p class="section-lead section-lead--light">Right here we’ve got something you gonna love! Sed ut perspici.</p>
+        </header>
+
+        <div class="card-row">
+          <article class="media-card">
+            <!-- FIX: role="img" позволяет использовать aria-label валидно -->
+            <div class="media-thumb" role="img" aria-label="Project image placeholder"></div>
+            <div class="media-card__body">
+              <h3 class="media-card__title">Project Name</h3>
+              <p class="media-card__text">digitalAgency Web design/Frontend Development Totam rem aperiam</p>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <div class="media-thumb" role="img" aria-label="Project image placeholder"></div>
+            <div class="media-card__body">
+              <h3 class="media-card__title">Project Name</h3>
+              <p class="media-card__text">digitalAgency Web design/Frontend Development Totam rem aperiam</p>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <div class="media-thumb" role="img" aria-label="Project image placeholder"></div>
+            <div class="media-card__body">
+              <h3 class="media-card__title">Project Name</h3>
+              <p class="media-card__text">digitalAgency Web design/Frontend Development Totam rem aperiam</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video" aria-label="Video section">
+      <div class="container video-inner">
+        <button class="video-play" type="button" aria-label="Play video (mock)">
+          <span class="video-play__triangle" aria-hidden="true"></span>
+        </button>
+
+        <h2 class="video-title">See my work in action</h2>
+        <p class="video-text">Beautifully designed with technical excellence and exceptional detail.</p>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Latest From the Blog</h2>
+          <p class="section-lead">Cras at ultrices erat, sed vulputate eros nunc at augue gravida.</p>
+        </header>
+
+        <div class="card-row">
+          <article class="media-card media-card--blog">
+            <div class="media-card__media">
+              <!-- FIX: role="img" + aria-label -->
+              <div class="blog-thumb" role="img" aria-label="Blog post image placeholder"></div>
+              <!-- FIX: убрали aria-label со span; дата и так читаема -->
+              <span class="badge-date">25<br><small>May</small></span>
+            </div>
+            <div class="media-card__body">
+              <h3 class="media-card__title">Post Title</h3>
+              <p class="media-card__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+              <a class="text-link" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="media-card media-card--blog">
+            <div class="media-card__media">
+              <div class="blog-thumb" role="img" aria-label="Blog post image placeholder"></div>
+              <span class="badge-date">12<br><small>Apr</small></span>
+            </div>
+            <div class="media-card__body">
+              <h3 class="media-card__title">Post Title</h3>
+              <p class="media-card__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+              <a class="text-link" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="media-card media-card--blog">
+            <div class="media-card__media">
+              <div class="blog-thumb" role="img" aria-label="Blog post image placeholder"></div>
+              <span class="badge-date">03<br><small>Mar</small></span>
+            </div>
+            <div class="media-card__body">
+              <h3 class="media-card__title">Post Title</h3>
+              <p class="media-card__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+              <a class="text-link" href="#">Read more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials" aria-label="Testimonials">
+      <div class="container testimonials-inner">
+        <blockquote class="quote">
+          <p>“I'm wondering why I never contacted these guys sooner! Seriously, they all have commendable talent in their respective field and knocked my concept out of the ballpark. Thanks for an amazing experience!”</p>
+          <footer class="quote-footer">- Segero, NoranicMeds</footer>
+        </blockquote>
+
+        <!-- FIX: добавили role="navigation", чтобы aria-label был валиден -->
+        <div class="dots" role="navigation" aria-label="Testimonials navigation">
+          <span class="dot dot--active" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-col">
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-lead">Cras at ultrices erat, sed vulputate eros nunc at augue gravida!</p>
+
+          <ul class="contact-list">
+            <li><strong>Address:</strong> 123 Main Street, City</li>
+            <li><strong>Phone:</strong> +7 (000) 000-00-00</li>
+            <li><strong>Email:</strong> example@mail.com</li>
+          </ul>
+        </div>
+
+        <div class="contact-col">
+          <h3 class="contact-subtitle">Say hello!</h3>
+          <form class="contact-form" action="#" method="post">
+            <label class="field">
+              <span class="field-label">Name</span>
+              <input class="field-input" type="text" name="name" autocomplete="name" required>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Email</span>
+              <input class="field-input" type="email" name="email" autocomplete="email" required>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Message</span>
+              <textarea class="field-input field-input--area" name="message" rows="4" required></textarea>
+            </label>
+
+            <button class="btn btn-accent" type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-col">
+          <h3 class="contact-subtitle">Follow</h3>
+          <ul class="social">
+            <li><a class="social-link" href="#">Fb</a></li>
+            <li><a class="social-link" href="#">Tw</a></li>
+            <li><a class="social-link" href="#">Be</a></li>
+            <li><a class="social-link" href="#">Dr</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map" aria-label="Map">
+      <div id="map-container" class="map-media"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p class="footer-copy">© 2014 my.kingdom. All Rights Reserved.</p>
+      <p class="footer-credit">Designed by themecurve, exclusive for kreativeshowcase</p>
+    </div>
+  </footer>
+
+  <script>
+    function initMap() {
+      var mapContainer = document.getElementById('map-container');
+      if (!mapContainer || !window.google || !google.maps) {
+        return;
+      }
+
+      var center = { lat: 55.7558, lng: 37.6173 };
+      var mapOptions = {
+        zoom: 15,
+        center: center,
+        mapTypeControl: true,
+        fullscreenControl: true,
+        zoomControl: true,
+        streetViewControl: false
+      };
+
+      var map = new google.maps.Map(mapContainer, mapOptions);
+
+      new google.maps.Marker({
+        position: center,
+        map: map,
+        title: 'Our location'
+      });
+    }
+  </script>
+</body>
+</html>
